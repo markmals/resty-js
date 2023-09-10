@@ -1,8 +1,8 @@
 {
-    "name": "package-name",
-    "version": "0.0.0",
-    "description": "",
-    "repository": "markmals/package-name",
+    "name": "resty-js",
+    "version": "0.1.0",
+    "description": "A library for building type-safe API clients in TypeScript",
+    "repository": "markmals/resty-js",
     "license": "MIT",
     "sideEffects": false,
     "type": "module",
@@ -24,14 +24,12 @@
         "lint-fix": "eslint --fix",
         "dev": "vitest dev",
         "test": "vitest run",
-        "prepack": "unbuild",
-        "release": "npm run build && np"
+        "prepublishOnly": "unbuild"
     },
     "devDependencies": {
         "typescript": "latest",
         "unbuild": "latest",
         "vitest": "latest",
-        "np": "latest",
         "prettier": "latest",
         "eslint": "latest",
         "@typescript-eslint/eslint-plugin": "latest",
@@ -42,8 +40,5 @@
         "tabWidth": 4,
         "semi": false,
         "arrowParens": "avoid"
-    },
-    "np": {
-        "yarn": false
     }
 }
